@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Currículum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -122,7 +123,49 @@
             text-align: center;
             padding: 20px;
             color: #808080;
+            background-color: #390033;
             /* Gris */
+        }
+
+
+        .swiper-hero {
+            width: 50%;
+            box-shadow: 12px 12px 2px 1px #441cd7;
+            margin-bottom: 50px;
+        }
+
+        .swiper-hero img {
+            object-fit: cover;
+            height: 800px;
+            width: 100%;
+        }
+
+
+        #d1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        #d2 {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        #d3 {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        fieldset {
+            border-left: transparent;
+            border-bottom: transparent;
+            border-right: transparent;
         }
     </style>
 </head>
@@ -167,9 +210,99 @@
             <p>CSS</p>
         </section>
     </section>
-    <footer>
-        <p>Contacto: correo@example.com | Teléfono: (123) 456-7890</p>
+
+    <section id="slyder">
+        <div class="swiper swiper-hero">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg"
+                        width="100%" height="100%" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://wallpapers.com/images/high/night-mountain-720-x-1280-fi1ti0cmyax7z8sc.webp" alt="">
+                </div>
+                <div class="swiper-slide"><img
+                        src="https://images.unsplash.com/photo-1556480435-b7b37fd635d6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://images.unsplash.com/photo-1556283253-1e48b95dc3c7?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://images.unsplash.com/photo-1556379092-dca659792591?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </section>
+
+    <footer id="down">
+        <fieldset>
+            <legend> <img src="https://img.icons8.com/?size=50&id=111056&format=png" width="40" height="40" alt=""><img
+                    src="https://img.icons8.com/?size=50&id=435&format=png" width="40" height="40" alt=""><img
+                    src="https://img.icons8.com/?size=50&id=32292&format=png" width="40" height="40" alt=""><img
+                    src="https://img.icons8.com/?size=50&id=84521&format=png" width="40" height="40" alt=""><img
+                    src="https://img.icons8.com/?size=50&id=447&format=png" width="40" height="40" alt="">
+            </legend>
+        </fieldset>
+        <section id="d1">
+            <p>Contacto: correo@example.com | Teléfono: (123) 456-7890</p>
+        </section>
+        <section id="d2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi perferendis, unde saepe
+                voluptatibus officia maxime cupiditate ipsa est dicta vel fugiat mollitia ea odit voluptatem assumenda,
+                quis expedita non.</p>
+        </section>
+        <section id="d3">
+            <section id="izquierda">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde exercitationem
+                quaerat, provident at molestiae mollitia magnam commodi dolor earum perspiciatis laboriosam fugit
+                eligendi natus amet quae repellendus quibusdam, voluptatem modi.</section>
+            <section id="derecha">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde exercitationem quaerat,
+                provident at molestiae mollitia magnam commodi dolor earum perspiciatis laboriosam fugit eligendi natus
+                amet quae repellendus quibusdam, voluptatem modi.</section>
+
+        </section>
     </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-hero', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            effect: 'coverflow',
+            autoplay: {
+                delay: 2000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+
+            // Navigation arrows
+            //navigation: {
+            // nextEl: '.swiper-button-next',
+            //   prevEl: '.swiper-button-prev',
+            //},
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 
 </html>
