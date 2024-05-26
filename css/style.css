@@ -57,6 +57,7 @@ h4 {
 h2,
 h3 {
   color: #a351f5;
+  font-size: 100%;
   /* Azul */
 }
 
@@ -208,7 +209,7 @@ img {
 
 .container {
   width: 100%;
-  width: 820px;
+  width: 90%;
   height: 340px;
   display: flex;
   gap: 10px;
@@ -253,6 +254,7 @@ img {
 }
 
 .card>.card-content {
+  /* background-color: #ff1984; */
   display: flex;
   align-items: center;
   position: absolute;
@@ -265,8 +267,10 @@ img {
 }
 
 .card:hover>.card-content {
-  inset: 20px;
+  inset: 5%;
   top: auto;
+  border-radius: 20px;
+  background-color: #0000009f;
 }
 
 .card-content>* {
@@ -399,9 +403,46 @@ img {
 h6 {
   color: rgb(163, 153, 153);
   z-index: 2;
-  font-size: 23px;
+  font-size: 120%;
   background-color: transparent;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   text-shadow: 5px 5px 5px black;
+}
+
+
+.containerSkills {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardSkills {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 55%;
+  width: 95%;
+  background-color: #101010;
+  border-radius: 15px;
+  box-shadow: 16px 14px 20px #0000008c;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.cardSkills::after {
+  content: "";
+  position: absolute;
+  height: 97%;
+  width: 99%;
+  background-color: #101010;
+  border-radius: 15px;
+  box-shadow: inset 16px 14px 20px #0000008c;
+  ;
 }
