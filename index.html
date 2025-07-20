@@ -4,380 +4,833 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Melo</title>
+    <title>Pablo Andrés Melo Carvajal - Desarrollador Mobile</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    <meta name="description" content="Desarrollador Mobile especializado en Flutter con experiencia en aplicaciones multiplataforma">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1><br>¡Hola soy,<br><span class="gradient">Pablo Andrés Melo Carvajal!</span></h1>
-        <h4>
-            </h1>
-            <p><span class="gradient2">Desarrollador Mobile</span></p>
-        </h4>
-    </header>
-    <div class="contenedor">
-        <div class="tarjeta">
-            <h6>Soy un desarrollador de aplicaciones móviles especializado en Flutter con habilidades
-                sólidas en diseño de interfaces y optimización de rendimiento. Con experiencia en el desarrollo de
-                aplicaciones
-                multiplataforma, me destaco por crear experiencias de usuario intuitivas y atractivas.</h6>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#inicio">Pablo Melo</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#habilidades" class="nav-link">Stack Tecnológico</a>
+                <a href="#flutter-packages" class="nav-link">Open Source</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <section id="container">
-
-        <section class="education">
-            <h2>Estudios</h2>
-            <div>
-                <h3>Ingenieria de Sistemas</h3>
-                <br>
-                <p>Universidad EAN</p>
-                <p>Actualmente</p>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>¡Hola, soy <span class="gradient">Pablo Andrés Melo Carvajal</span></h1>
+            <p class="hero-subtitle"><span class="gradient2">Desarrollador Mobile</span></p>
+            <div class="hero-description">
+                <p>Especializado en Flutter con experiencia en el desarrollo de aplicaciones multiplataforma</p>
             </div>
-        </section>
-
-        <!-- <section class="experience">
-            <h2>Experiencia Laboral</h2>
-            <div>
-                <h3>Desarrollador Mobile</h3>
-                <br>
-                <p>Quick Help SAS</p>
-                <p>Fecha de inicio: Enero 2021</p>
-                <p>Actualmente</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
             </div>
-        </section> -->
-        <section class="skills">
-            <h2>Tecnologias</h2>
-            <p>Dart</p>
-            <p>Flutter</p>
-            <p>Kotlin</p>
-        </section>
-        <section class="skills">
-            <h2>Otras habilidades</h2>
-            <p>Scrum</p>
-            <p>UI/UX</p>
-            <p>JavaScript</p>
-            <p>HTML</p>
-            <p>CSS</p>
-
-        </section>
+        </div>
     </section>
 
-
-
-    <div class="container">
-        <div class="card active">
-            <img class="background" src="images/Screenshot_1716690500.png" alt="">
-
-            <div class="card-content">
-                <div class="profile-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-smartphone">
-                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                    </svg>
-
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Sobre mí</h2>
+                <div class="about-card">
+                    <div class="about-text">
+                        <h6>Soy desarrollador de aplicaciones móviles especializado en Flutter y Kotlin, con sólidos conocimientos de diseño de interfaces, optimización del rendimiento y una arquitectura de aplicaciones robusta. Tengo experiencia en la creación de pruebas unitarias, de widgets y de integración para garantizar la calidad del código. También integro pipelines de CI/CD para optimizar la implementación y la entrega. Me apasiona crear aplicaciones móviles intuitivas y multiplataforma que mejoran la experiencia del usuario y el valor comercial.</h6>
+                    </div>
                 </div>
-                <a href="https://app-movies-gallery.netlify.app/" target="_blank">
-                    <h3 class="title">Movies Gallery</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="skills-section">
+        <div class="container">
+            <h2>Stack Tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Desarrollo Mobile</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="dart">
+                            <div class="skill-icon">
+                                <img src="svg/dart.svg" alt="Dart" />
+                            </div>
+                            <span class="skill-name">Dart</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="flutter">
+                            <div class="skill-icon">
+                                <img src="svg/flutter-logo.svg" alt="Flutter" />
+                            </div>
+                            <span class="skill-name">Flutter</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="kotlin">
+                            <div class="skill-icon">
+                                <img src="svg/kotlin-1.svg" alt="Kotlin" />
+                            </div>
+                            <span class="skill-name">Kotlin</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="swift">
+                            <div class="skill-icon">
+                                <img src="svg/swift-15.svg" alt="Swift" />
+                            </div>
+                            <span class="skill-name">Swift</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Desarrollo Web</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="javascript">
+                            <div class="skill-icon">
+                                <img src="svg/javascript-1.svg" alt="JavaScript" />
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="html">
+                            <div class="skill-icon">
+                                <img src="svg/html-1.svg" alt="HTML" />
+                            </div>
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="css">
+                            <div class="skill-icon">
+                                <img src="svg/css-3.svg" alt="CSS" />
+                            </div>
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="firebase">
+                            <div class="skill-icon">
+                                <img src="svg/firebase-1.svg" alt="Firebase" />
+                            </div>
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="gcp">
+                            <div class="skill-icon">
+                                <img src="svg/google-cloud-1.svg" alt="Google Cloud" />
+                            </div>
+                            <span class="skill-name">Google Cloud</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Metodologías & Diseño</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="scrum">
+                            <div class="skill-icon">
+                                <img src="svg/scrum-1.svg" alt="Scrum" />
+                            </div>
+                            <span class="skill-name">Scrum</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="uiux">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" fill="#FF6B9D"/>
+                                    <path d="M6 7h12M6 11h8M6 15h10" stroke="#FFF" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">UI/UX</span>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section id="experiencia" class="experience-section">
+        <div class="container">
+            <h2>Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-info">
+                                    <h3 class="job-title">Desarrollador Mobile</h3>
+                                    <h4 class="company-name">Quick Help</h4>
+                                </div>
+                                <div class="job-period">
+                                    <span class="period-badge">Ene 2021 - Jun 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="job-description">
+                                <p>Desarrollo y mantenimiento de aplicaciones móviles multiplataforma utilizando Flutter, enfocándome en crear experiencias de usuario excepcionales y procesos de desarrollo eficientes.</p>
+                                
+                                <div class="responsibilities">
+                                    <h5>Responsabilidades principales:</h5>
+                                    <ul>
+                                        <li>Diseño e implementación de nuevas características con énfasis en UI/UX</li>
+                                        <li>Desarrollo de pruebas unitarias, de widget y de integración para garantizar la confiabilidad</li>
+                                        <li>Integración de flujos de trabajo CI/CD utilizando GitHub Actions para automatizar despliegues</li>
+                                        <li>Implementación automatizada en Apple App Store y Google Play Store</li>
+                                        <li>Monitoreo del rendimiento y reparación de errores para garantizar experiencias óptimas</li>
+                                        <li>Colaboración en equipos ágiles utilizando metodología Scrum</li>
+                                        <li>Proponer e implementar mejoras basadas en análisis y feedback de usuarios</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="job-tech">
+                                    <h5>Tecnologías utilizadas:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag flutter">Flutter</span>
+                                        <span class="tech-tag dart">Dart</span>
+                                        <span class="tech-tag swift">Swift</span>
+                                        <span class="tech-tag kotlin">Kotlin</span>
+                                        <span class="tech-tag firebase">Firebase</span>
+                                        <span class="tech-tag xcode">Xcode</span>
+                                        <span class="tech-tag github">GitHub Actions</span>
+                                        <span class="tech-tag testing">Testing</span>
+                                        <span class="tech-tag scrum">Scrum</span>
+                                        <span class="tech-tag cicd">CI/CD</span>
+                                        <span class="tech-tag uiux">UI/UX</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="achievements">
+                                    <h5>Logros destacados:</h5>
+                                    <ul>
+                                        <li>Automatización completa del proceso de despliegue en tiendas de aplicaciones</li>
+                                        <li>Implementación de testing completo (unitarias, widget e integración)</li>
+                                        <li>Mejora continua de la experiencia de usuario basada en métricas y feedback</li>
+                                        <li>Optimización del flujo de desarrollo con metodologías ágiles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Puedes agregar más experiencias aquí -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-info">
+                                    <h3 class="job-title">Desarrollador Flutter</h3>
+                                    <h4 class="company-name">Free Lancer</h4>
+                                </div>
+                                <div class="job-period">
+                                    <span class="period-badge">Ene 2020 - Dic 2020</span>
+                                </div>
+                            </div>
+                            
+                            <div class="job-description">
+                                <p>Inicio de mi carrera profesional en desarrollo móvil, aprendiendo las bases de Flutter y participando en proyectos de pequeña escala.</p>
+                                
+                                <div class="job-tech">
+                                    <h5>Tecnologías utilizadas:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag flutter">Flutter</span>
+                                        <span class="tech-tag dart">Dart</span>
+                                        <span class="tech-tag sqlite">SQLite</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects-section">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <p class="projects-subtitle">Una selección de mis trabajos</p>
+            
+            <div class="projects-grid">
+
+    <!-- Movies Gallery App -->
+
+                <div class="project-card" data-project="movies">
+                    <div class="project-image">
+                        <img src="images/Screenshot_1716690500.png" alt="Movies Gallery App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://app-movies-gallery.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    <span>Pagina Web</span>
+                                </a>
+                                <a href="https://github.com/Alsahim0420/movies-gallery" class="project-link github-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Movies Gallery</h3>
+                            <div class="project-type">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                <span>Mobile App</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-description">
+                            Aplicación móvil multiplataforma para explorar películas populares con una interfaz moderna y intuitiva. Incluye funcionalidades de búsqueda, favoritos y detalles completos de cada película.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge flutter">Flutter</span>
+                            <span class="tech-badge dart">Dart</span>
+                            <span class="tech-badge api">REST API</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                </svg>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                    <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    <!-- My Tasks App -->
+
+                <div class="project-card" data-project="tasks">
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/panmecar/image/upload/v1752961283/ChatGPT_Image_19_jul_2025_04_41_11_p.m._shujvx.png" alt="My Tasks App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://my-tasks-landing-page.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    <span>Pagina Web</span>
+                                </a>
+                                <a href="https://github.com/Alsahim0420/My-Tasks" class="project-link github-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">My Tasks</h3>
+                            <div class="project-type">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                <span>Mobile App</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-description">
+                            Aplicación de gestión de tareas con funcionalidades avanzadas de organización, recordatorios y sincronización. Diseñada para mejorar la productividad personal y profesional.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge flutter">Flutter</span>
+                            <span class="tech-badge dart">Dart</span>
+                            <span class="tech-badge sqlite">Shared Preferences</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 11l3 3 8-8"></path>
+                                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.53 0 2.96.38 4.21 1.05"></path>
+                                </svg>
+                                <span>Task Management</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                                <span>Reminders</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Billey App -->
+                <div class="project-card" data-project="billey">
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/panmecar/image/upload/v1752550787/ChatGPT_Image_14_jul_2025_10_30_44_p.m._hpoaxj.png" alt="Billey App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://billey.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    <span>Pagina Web</span>
+                                </a>
+                                <a href="https://github.com/Alsahim0420/Billey" target="_blank" rel="noopener noreferrer" class="project-link github-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Billey</h3>
+                            <div class="project-type">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                <span>Mobile App</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-description">
+                            💼 Billey – Tu app de finanzas personales. Billey es una aplicación diseñada para ayudarte a tomar el control de tu dinero de forma simple, rápida y efectiva. Con una interfaz amigable y funciones potentes, Billey te permite registrar tus ingresos y gastos, visualizar tus hábitos financieros y alcanzar tus metas con claridad.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge flutter">Flutter</span>
+                            <span class="tech-badge dart">Dart</span>
+                            <span class="tech-badge hive">Hive</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                                <span>Expense Tracking</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v18h18"></path>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                                </svg>
+                                <span>Budget Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- DevBoard -->
+                <div class="project-card" data-project="devboard">
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/panmecar/image/upload/v1752965412/Captura_de_pantalla_2025-07-19_a_la_s_5.49.47_p.m._d6kmfc.png" alt="DevBoard App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://devboardapp.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Alsahim0420/DevBoard" target="_blank" rel="noopener noreferrer" class="project-link github-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">DevBoard</h3>
+                            <div class="project-type">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                <span>Web App</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-description">
+                            Aplicación web de gestión de tareas tipo Trello/Jira desarrollada con Flutter Web. Permite crear tableros Kanban, organizar tareas en columnas, arrastrar y soltar elementos, y gestionar proyectos de desarrollo de forma visual e intuitiva.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge flutter">Flutter Web</span>
+                            <span class="tech-badge dart">Dart</span>
+                            <span class="tech-badge firebase">Firebase</span>
+                            <span class="tech-badge hive">Hive</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v18h18"></path>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                                </svg>
+                                <span>Kanban Boards</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <span>Team Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mi Contribución Open Source -->
+    <section id="flutter-packages" class="packages-section">
+        <div class="container">
+            <div class="packages-header">
+                <h2>Mi Contribución Open Source</h2>
+                <p class="packages-subtitle">Librería Flutter publicada para la comunidad de desarrolladores</p>
+            </div>
+            
+            <div class="packages-showcase">
+                <a href="https://pub.dev/packages/ai_adaptive_ui" target="_blank" rel="noopener noreferrer" class="main-package-card">
+                    <div class="package-main-content">
+                        <div class="package-header">
+                            <div class="package-icon-large">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M8 21l4-7 4 7"/>
+                                    <path d="M12 13V7"/>
+                                    <circle cx="12" cy="8" r="1"/>
+                                </svg>
+                                <div class="author-badge-large">
+                                    <span>🏆 Autor</span>
+                                </div>
+                            </div>
+                            <div class="package-main-info">
+                                <h3>🎨 AI Adaptive UI</h3>
+                                <p class="package-tagline">Librería Flutter moderna para interfaces adaptativas</p>
+                                <div class="package-main-stats">
+                                    <span class="stat-item pub">📦 pub.dev</span>
+                                    <span class="stat-item downloads" id="downloads-count">⬇️ <span class="loading">...</span> downloads</span>
+                                    <span class="stat-item version">v0.1.0</span>
+                                    <span class="stat-item likes" id="likes-count">👍 <span class="loading">...</span> like</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="package-description">
+                            <p>Una librería Flutter moderna que permite construir interfaces adaptativas que responden automáticamente a diferentes tamaños de pantalla, orientaciones e idiomas. Incluye widgets inteligentes como <code>AdaptiveLayout</code> y <code>AdaptiveCard</code>, con preparación para integración con IA.</p>
+                        </div>
+                        
+                        <div class="package-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <span>Diseño Responsivo Automático</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🌍</span>
+                                <span>Soporte Multiidioma</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🤖</span>
+                                <span>Sugerencias de IA</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⚡</span>
+                                <span>Rendimiento Optimizado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="visit-library">
+                            <span class="visit-text">Haz clic para ver en pub.dev →</span>
+                        </div>
+                    </div>
                 </a>
-
-                <div class="technologies">
-                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 317">
-                        <defs>
-                            <linearGradient x1="4%" y1="27%" x2="75.9%" y2="52.9%" id="a">
-                                <stop offset="0%" />
-                                <stop stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="#47C5FB" d="M158 0 0 158l49 48L255 0zM157 145l-85 85 49 50 49-49 85-86z" />
-                        <path fill="#00569E" d="m121 280 37 37h97l-85-86z" />
-                        <path fill="#00B5F8" d="m72 230 48-48 50 49-49 49z" />
-                        <path fill-opacity=".8" fill="url(#a)" d="m121 280 41-14 4-31z" />
-                    </svg>
-
-
-
-                </div>
             </div>
-            <div class="backdrop"></div>
         </div>
+    </section>
 
-        <div class="card active">
-            <img class="background" src="images/my-task.jpg" alt="">
-
-            <div class="card-content">
-                <div class="profile-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-smartphone">
-                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                    </svg>
-
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>¿Necesitas un desarrollador mobile talentoso para tu equipo o proyecto?</h2>
+                    <p>Con 4+ años de experiencia en Flutter, Kotlin, Swift y metodologías ágiles, estoy listo para impulsar tu próximo gran proyecto</p>
                 </div>
-                <a href="https://my-tasks-landing-page.netlify.app/" target="_blank">
-                    <h3 class="title">My Tasks</h3>
-                </a>
-
-                <div class="technologies">
-                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 317">
-                        <defs>
-                            <linearGradient x1="4%" y1="27%" x2="75.9%" y2="52.9%" id="a">
-                                <stop offset="0%" />
-                                <stop stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="#47C5FB" d="M158 0 0 158l49 48L255 0zM157 145l-85 85 49 50 49-49 85-86z" />
-                        <path fill="#00569E" d="m121 280 37 37h97l-85-86z" />
-                        <path fill="#00B5F8" d="m72 230 48-48 50 49-49 49z" />
-                        <path fill-opacity=".8" fill="url(#a)" d="m121 280 41-14 4-31z" />
-                    </svg>
-
-
-
+                <div class="cta-buttons">
+                    <a href="#contacto" class="cta-btn primary">¡Conversemos sobre las oportunidades!</a>
+                    <a href="mailto:panmecar@gmail.com" class="cta-btn secondary">Enviar Email Directo</a>
                 </div>
             </div>
-            <div class="backdrop"></div>
+            
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <div class="cta-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <span>Desarrollo de alta calidad</span>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <span>Disponibilidad inmediata</span>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <span>Trabajo en equipo ágil</span>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <span>Remoto, híbrido o presencial</span>
+                </div>
+            </div>
         </div>
+    </section>
 
-
-
-        <!-- <div class="card">
-            <img class="background"
-                src="https://images.unsplash.com/photo-1556480435-b7b37fd635d6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-
-            <div class="card-content">
-                <div class="profile-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
-                        <line x1="6" x2="10" y1="11" y2="11" />
-                        <line x1="8" x2="8" y1="9" y2="13" />
-                        <line x1="15" x2="15.01" y1="12" y2="12" />
-                        <line x1="18" x2="18.01" y1="10" y2="10" />
-                        <path
-                            d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
-                    </svg>
+    <!-- Contacto -->
+    <footer id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h2>¡Construyamos el Futuro Juntos!</h2>
+                    <p class="contact-subtitle">¿Buscas un desarrollador mobile para tu equipo o tienes un proyecto en mente? Estoy disponible para oportunidades laborales y colaboraciones profesionales</p>
                 </div>
-
-                <h3 class="title">Baldur's Gate 3</h3>
-                <div class="technologies">
-                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 317">
-                        <defs>
-                            <linearGradient x1="4%" y1="27%" x2="75.9%" y2="52.9%" id="a">
-                                <stop offset="0%" />
-                                <stop stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="#47C5FB" d="M158 0 0 158l49 48L255 0zM157 145l-85 85 49 50 49-49 85-86z" />
-                        <path fill="#00569E" d="m121 280 37 37h97l-85-86z" />
-                        <path fill="#00B5F8" d="m72 230 48-48 50 49-49 49z" />
-                        <path fill-opacity=".8" fill="url(#a)" d="m121 280 41-14 4-31z" />
-                    </svg>
-
-
-
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email Profesional</h3>
+                            <p>Para oportunidades laborales y colaboraciones</p>
+                            <a href="mailto:panmecar@gmail.com" class="contact-link">panmecar@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>WhatsApp</h3>
+                            <p>Respuesta rápida para consultas profesionales</p>
+                            <a href="https://wa.me/573006866709" target="_blank" rel="noopener noreferrer" class="contact-link">(57) 300-6866709</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon availability">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Disponibilidad</h3>
+                            <p>Remoto, híbrido o presencial</p>
+                            <span class="contact-text">Inicio inmediato 🚀</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon corporate">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 21h18"/>
+                                <path d="M5 21V7l8-4v18"/>
+                                <path d="M19 21V11l-6-4"/>
+                                <path d="M9 9v.01"/>
+                                <path d="M9 12v.01"/>
+                                <path d="M9 15v.01"/>
+                                <path d="M9 18v.01"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Oportunidades Corporativas</h3>
+                            <p>Abierto a posiciones full-time y contratos</p>
+                            <span class="contact-text">4+ años de experiencia 💼</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-section">
+                    <h3>Sígueme en redes</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pablo-andrés-melo-carvajal-006308195/" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        
+                        <a href="https://github.com/Alsahim0420" target="_blank" rel="noopener noreferrer" class="social-link github">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        
+                      
+                    </div>
+                </div>
+                
+                <div class="contact-footer">
+                    <p>¿Listo para dar el siguiente paso? <strong>¡Estoy aquí para ayudarte!</strong></p>
                 </div>
             </div>
-            <div class="backdrop"></div>
         </div>
-
-        <div class="card">
-            <img class="background"
-                src="https://wallpapers.com/images/high/night-mountain-720-x-1280-fi1ti0cmyax7z8sc.webp" alt="">
-
-            <div class="card-content">
-                <div class="profile-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-monitor">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                        <line x1="8" y1="21" x2="16" y2="21"></line>
-                        <line x1="12" y1="17" x2="12" y2="21"></line>
-                    </svg>
-
-                </div>
-
-
-                <h3 class="title">God Of War</h3>
-
-                <div class="technologies">
-                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 317">
-                        <defs>
-                            <linearGradient x1="4%" y1="27%" x2="75.9%" y2="52.9%" id="a">
-                                <stop offset="0%" />
-                                <stop stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="#47C5FB" d="M158 0 0 158l49 48L255 0zM157 145l-85 85 49 50 49-49 85-86z" />
-                        <path fill="#00569E" d="m121 280 37 37h97l-85-86z" />
-                        <path fill="#00B5F8" d="m72 230 48-48 50 49-49 49z" />
-                        <path fill-opacity=".8" fill="url(#a)" d="m121 280 41-14 4-31z" />
-                    </svg>
-
-
-
-                </div>
-            </div>
-            <div class="backdrop"></div>
-        </div>
-
-
-
-        <div class="card">
-            <img class="background"
-                src="https://images.unsplash.com/photo-1556283253-1e48b95dc3c7?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-
-            <div class="card-content">
-                <div class="profile-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
-                        <line x1="6" x2="10" y1="11" y2="11" />
-                        <line x1="8" x2="8" y1="9" y2="13" />
-                        <line x1="15" x2="15.01" y1="12" y2="12" />
-                        <line x1="18" x2="18.01" y1="10" y2="10" />
-                        <path
-                            d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
-                    </svg>
-                </div>
-
-                <h3 class="title">Elden Ring</h3>
-                <div class="technologies">
-                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 317">
-                        <defs>
-                            <linearGradient x1="4%" y1="27%" x2="75.9%" y2="52.9%" id="a">
-                                <stop offset="0%" />
-                                <stop stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="#47C5FB" d="M158 0 0 158l49 48L255 0zM157 145l-85 85 49 50 49-49 85-86z" />
-                        <path fill="#00569E" d="m121 280 37 37h97l-85-86z" />
-                        <path fill="#00B5F8" d="m72 230 48-48 50 49-49 49z" />
-                        <path fill-opacity=".8" fill="url(#a)" d="m121 280 41-14 4-31z" />
-                    </svg>
-
-
-
-                </div>
-            </div>
-            <div class="backdrop"></div>
-        </div>
-
-        <div class="card">
-            <img class="background" src="./assets/The-Last-Of-Us 01.jpg" alt="">
-
-            <div class="card-content">
-                <div class="profile-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
-                        <line x1="6" x2="10" y1="11" y2="11" />
-                        <line x1="8" x2="8" y1="9" y2="13" />
-                        <line x1="15" x2="15.01" y1="12" y2="12" />
-                        <line x1="18" x2="18.01" y1="10" y2="10" />
-                        <path
-                            d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
-                    </svg>
-                </div>
-
-                <h3 class="title">The Last of Us</h3>
-                <div class="technologies">
-                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 317">
-                        <defs>
-                            <linearGradient x1="4%" y1="27%" x2="75.9%" y2="52.9%" id="a">
-                                <stop offset="0%" />
-                                <stop stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="#47C5FB" d="M158 0 0 158l49 48L255 0zM157 145l-85 85 49 50 49-49 85-86z" />
-                        <path fill="#00569E" d="m121 280 37 37h97l-85-86z" />
-                        <path fill="#00B5F8" d="m72 230 48-48 50 49-49 49z" />
-                        <path fill-opacity=".8" fill="url(#a)" d="m121 280 41-14 4-31z" />
-                    </svg>
-
-
-
-                </div>
-            </div>
-            <div class="backdrop"></div>
-        </div> -->
-    </div>
-
-    <footer id="down">
-        <fieldset>
-            <legend>
-                <a href="https://www.linkedin.com/in/pablo-andrés-melo-carvajal-006308195/" target="_blank">
-
-                    <img src="images/linkedin-logo.svg" height="40" alt="LinkedIn" id="logos">
-                </a>
-                <a href="https://github.com/Alsahim0420" target="_blank">
-
-                    <img src="images/github-logo.svg" height="40" alt="github" id="logos">
-                </a>
-
-            </legend>
-        </fieldset>
-        <section id="d1">
-
-            <p> Contacto:<a href="mailto:correo@ejemplo.com">
-                    panmecar@gmail.com </a> | Teléfono:<a href="https://wa.me/573006866709">(57) 300-6866709
-                </a></p>
-
-        </section>
-        <!-- <section id="d2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi perferendis, unde saepe
-                voluptatibus officia maxime cupiditate ipsa est dicta vel fugiat mollitia ea odit voluptatem assumenda,
-                quis expedita non.</p>
-        </section>
-        <section id="d3">
-            <section id="izquierda">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde exercitationem
-                quaerat, provident at molestiae mollitia magnam commodi dolor earum perspiciatis laboriosam fugit
-                eligendi natus amet quae repellendus quibusdam, voluptatem modi.</section>
-            <section id="derecha">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde exercitationem quaerat,
-                provident at molestiae mollitia magnam commodi dolor earum perspiciatis laboriosam fugit eligendi natus
-                amet quae repellendus quibusdam, voluptatem modi.</section>
-
-        </section> -->
     </footer>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-hero', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-            effect: 'coverflow',
-            autoplay: {
-                delay: 2000,
-            },
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-            },
-
-            // Navigation arrows
-            //navigation: {
-            // nextEl: '.swiper-button-next',
-            //   prevEl: '.swiper-button-prev',
-            //},
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    </script>
-
-    <script src="/js/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
