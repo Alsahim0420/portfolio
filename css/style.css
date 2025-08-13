@@ -744,6 +744,24 @@ body {
   border: 1px solid rgba(250, 115, 67, 0.3);
 }
 
+.tech-tag.nodejs {
+  background: rgba(104, 183, 120, 0.2);
+  color: #68B778;
+  border: 1px solid rgba(104, 183, 120, 0.3);
+}
+
+.tech-tag.postgresql {
+  background: rgba(51, 103, 145, 0.2);
+  color: #336791;
+  border: 1px solid rgba(51, 103, 145, 0.3);
+}
+
+.tech-tag.leadership {
+  background: linear-gradient(45deg, rgba(163, 81, 245, 0.2), rgba(255, 25, 132, 0.2));
+  color: #A351F5;
+  border: 1px solid rgba(163, 81, 245, 0.3);
+}
+
 .tech-tag:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
