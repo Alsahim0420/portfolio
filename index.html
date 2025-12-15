@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Andrés Melo Carvajal - Desarrollador Mobile</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
-    <meta name="description" content="Desarrollador Mobile especializado en Flutter con experiencia en aplicaciones multiplataforma">
+    <title>Pablo Andrés Melo Carvajal - Tech Lead Mobile & Full Stack Developer</title>
+    <link rel="icon" href="assets/images/pink_icon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/pink_icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/pink_icon.png">
+    <meta name="description" content="Tech Lead Mobile y Full Stack Developer especializado en Flutter con experiencia liderando equipos y desarrollando aplicaciones multiplataforma">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,16 +21,26 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#inicio">Pablo Melo</a>
+                <a href="#inicio">
+                    <img src="assets/images/pink_icon_not_background.png" alt="Pablo Melo" class="nav-logo-icon">
+                </a>
             </div>
             <div class="nav-menu">
-                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#inicio" class="nav-link active">Inicio</a>
                 <a href="#sobre-mi" class="nav-link">Sobre mí</a>
                 <a href="#habilidades" class="nav-link">Stack Tecnológico</a>
                 <a href="#flutter-packages" class="nav-link">Open Source</a>
                 <a href="#experiencia" class="nav-link">Experiencia</a>
-                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#proyectos" class="nav-link">Proyectos Personales</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="assets/documents/CV_Pablo.pdf" download="CV_Pablo.pdf" class="nav-link nav-cv-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px; vertical-align: middle;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    CV
+                </a>
             </div>
             <div class="nav-toggle">
                 <span></span>
@@ -44,180 +54,263 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>¡Hola, soy <span class="gradient">Pablo Andrés Melo Carvajal</span></h1>
-            <p class="hero-subtitle"><span class="gradient2">Desarrollador Mobile</span></p>
+            <p class="hero-subtitle">Tech Lead Mobile & Full Stack Developer</p>
             <div class="hero-description">
-                <p>Especializado en Flutter con experiencia en el desarrollo de aplicaciones multiplataforma</p>
+                <p>Especializado en Flutter con experiencia liderando equipos y desarrollando aplicaciones multiplataforma de alto rendimiento</p>
             </div>
             <div class="hero-buttons">
                 <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
                 <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                <a href="assets/documents/CV_Pablo.pdf" download="CV_Pablo.pdf" class="btn btn-cv">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px; vertical-align: middle;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar CV
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="about-section">
+    <!-- Profile Section -->
+    <section id="sobre-mi" class="profile-section">
         <div class="container">
-            <div class="about-content">
-                <h2>Sobre mí</h2>
-                <div class="about-card">
-                    <div class="about-text">
-                        <h6>Soy desarrollador de aplicaciones móviles especializado en Flutter y Kotlin, con sólidos conocimientos de diseño de interfaces, optimización del rendimiento y una arquitectura de aplicaciones robusta. Tengo experiencia en la creación de pruebas unitarias, de widgets y de integración para garantizar la calidad del código. También integro pipelines de CI/CD para optimizar la implementación y la entrega. Me apasiona crear aplicaciones móviles intuitivas y multiplataforma que mejoran la experiencia del usuario y el valor comercial.</h6>
-                    </div>
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <img src="assets/images/white_not_background.png" alt="Pablo Melo" class="profile-avatar-icon">
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name">Pablo Andrés Melo Carvajal</h2>
+                    <p class="profile-title">Tech Lead Mobile & Full Stack Developer</p>
+                    <p class="profile-description">
+                        Soy Tech Lead Mobile y Desarrollador Full Stack especializado en Flutter, con más de 6 años de experiencia liderando equipos de desarrollo y construyendo aplicaciones móviles de alto rendimiento. Mi experiencia abarca desde el diseño de arquitecturas escalables y robustas hasta la implementación de soluciones backend con Node.js, Firebase y PostgreSQL. Como líder técnico, me enfoco en guiar equipos de desarrollo full-stack, estableciendo mejores prácticas, definiendo estrategias tecnológicas y supervisando la implementación de soluciones end-to-end. Tengo sólidos conocimientos en diseño de interfaces, optimización del rendimiento, creación de pruebas unitarias, de widgets y de integración para garantizar la calidad del código. También integro pipelines de CI/CD para optimizar la implementación y la entrega. Me apasiona crear aplicaciones móviles intuitivas y multiplataforma que mejoran la experiencia del usuario y el valor comercial, mientras lidero equipos hacia la excelencia técnica.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Habilidades -->
+    <!-- Interests Section -->
+    <section class="interests-section">
+        <div class="interests-container">
+            <div class="interests-label">Intereses</div>
+            <div class="interests-pills">
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span>Desarrollo Mobile</span>
+                </div>
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Trabajo en Equipo</span>
+                </div>
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span>Arquitectura de Software</span>
+                </div>
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    <span>Testing & QA</span>
+                </div>
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>CI/CD</span>
+                </div>
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4"></path>
+                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+                        <path d="M12 21c0-1-1-3-3-3s-3 2-3 3 1 3 3 3 3-2 3-3z"></path>
+                        <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3z"></path>
+                    </svg>
+                    <span>Open Source</span>
+                </div>
+                <div class="interest-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                        <polyline points="7 3 7 8 15 8"></polyline>
+                    </svg>
+                    <span>Aprendizaje Continuo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Education Section -->
     <section id="habilidades" class="skills-section">
         <div class="container">
-            <h2>Stack Tecnológico</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Desarrollo Mobile</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-skill="dart">
-                            <div class="skill-icon">
-                                <img src="svg/dart.svg" alt="Dart" />
-                            </div>
-                            <span class="skill-name">Dart</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="85"></div>
-                                </div>
-                            </div>
+            <h2 class="section-title">Stack Tecnológico</h2>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/flutter-logo.svg" alt="Flutter" />
                         </div>
-                        <div class="skill-item" data-skill="flutter">
-                            <div class="skill-icon">
-                                <img src="svg/flutter-logo.svg" alt="Flutter" />
-                            </div>
-                            <span class="skill-name">Flutter</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="90"></div>
-                                </div>
-                            </div>
+                        <div class="tool-info">
+                            <span class="tool-name">Flutter</span>
+                            <span class="tool-experience">+6 años</span>
                         </div>
-                        <div class="skill-item" data-skill="kotlin">
-                            <div class="skill-icon">
-                                <img src="svg/kotlin-1.svg" alt="Kotlin" />
-                            </div>
-                            <span class="skill-name">Kotlin</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="60"></div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/dart.svg" alt="Dart" />
                         </div>
-                        <div class="skill-item" data-skill="swift">
-                            <div class="skill-icon">
-                                <img src="svg/swift-15.svg" alt="Swift" />
-                            </div>
-                            <span class="skill-name">Swift</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="50"></div>
-                                </div>
-                            </div>
+                        <div class="tool-info">
+                            <span class="tool-name">Dart</span>
+                            <span class="tool-experience">+6 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/kotlin-1.svg" alt="Kotlin" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">Kotlin</span>
+                            <span class="tool-experience">+3 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/swift-15.svg" alt="Swift" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">Swift</span>
+                            <span class="tool-experience">+3 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/javascript-1.svg" alt="JavaScript" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">JavaScript</span>
+                            <span class="tool-experience">+7 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/html-1.svg" alt="HTML" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">HTML</span>
+                            <span class="tool-experience">+7 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/css-3.svg" alt="CSS" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">CSS</span>
+                            <span class="tool-experience">+7 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/firebase-1.svg" alt="Firebase" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">Firebase</span>
+                            <span class="tool-experience">+5 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/google-cloud-1.svg" alt="Google Cloud" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">Google Cloud</span>
+                            <span class="tool-experience">+5 años</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <img src="assets/svg/scrum-1.svg" alt="Scrum" />
+                        </div>
+                        <div class="tool-info">
+                            <span class="tool-name">Scrum</span>
+                            <span class="tool-experience">+5 años</span>
                         </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Desarrollo Web</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-skill="javascript">
-                            <div class="skill-icon">
-                                <img src="svg/javascript-1.svg" alt="JavaScript" />
-                            </div>
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="80"></div>
-                                </div>
-                            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mi Contribución Open Source -->
+    <section id="flutter-packages" class="packages-section">
+        <div class="container">
+            <div class="packages-header">
+                <h2>Mi Contribución Open Source</h2>
+                <p class="packages-subtitle">Librerías Flutter publicadas para la comunidad de desarrolladores</p>
+            </div>
+            
+            <div class="packages-showcase">
+                <a href="https://pub.dev/packages/ai_adaptive_ui" target="_blank" rel="noopener noreferrer" class="main-package-card">
+                    <div class="package-icon-large">
+                        <img src="assets/svg/flutter-logo.svg" alt="Flutter">
+                    </div>
+                    <div class="package-info">
+                        <h3 class="package-name">🎨 AI Adaptive UI</h3>
+                        <p class="package-description">Librería Flutter moderna para interfaces adaptativas que responden automáticamente a diferentes tamaños de pantalla, orientaciones e idiomas.</p>
+                        <div class="package-stats">
+                            <span class="stat-item" id="downloads-count">⬇️ <span class="loading">...</span> downloads</span>
+                            <span class="stat-item" id="likes-count">👍 <span class="loading">...</span> like</span>
+                            <span class="stat-item">v0.1.0</span>
                         </div>
-                        <div class="skill-item" data-skill="html">
-                            <div class="skill-icon">
-                                <img src="svg/html-1.svg" alt="HTML" />
-                            </div>
-                            <span class="skill-name">HTML</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="95"></div>
-                                </div>
-                            </div>
+                        <div class="package-link-text">Haz clic para ver en pub.dev →</div>
+                    </div>
+                </a>
+                
+                <a href="https://pub.dev/packages/advanced_video_player" target="_blank" rel="noopener noreferrer" class="main-package-card">
+                    <div class="package-icons-group">
+                        <div class="package-icon-small">
+                            <img src="assets/svg/flutter-logo.svg" alt="Flutter">
                         </div>
-                        <div class="skill-item" data-skill="css">
-                            <div class="skill-icon">
-                                <img src="svg/css-3.svg" alt="CSS" />
-                            </div>
-                            <span class="skill-name">CSS</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="90"></div>
-                                </div>
-                            </div>
+                        <div class="package-icon-small">
+                            <img src="assets/svg/swift-15.svg" alt="Swift">
+                        </div>
+                        <div class="package-icon-small">
+                            <img src="assets/svg/kotlin-1.svg" alt="Kotlin">
                         </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend & Cloud</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-skill="firebase">
-                            <div class="skill-icon">
-                                <img src="svg/firebase-1.svg" alt="Firebase" />
-                            </div>
-                            <span class="skill-name">Firebase</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="75"></div>
-                                </div>
-                            </div>
+                    <div class="package-info">
+                        <h3 class="package-name">🎬 Advanced Video Player</h3>
+                        <p class="package-description">Reproductor de video avanzado para Flutter con controles modernos, Picture-in-Picture, Google Cast, AirPlay y diseño personalizable.</p>
+                        <div class="package-stats">
+                            <span class="stat-item">⬇️ 58 downloads</span>
+                            <span class="stat-item">👍 1 like</span>
+                            <span class="stat-item">v1.0.0</span>
                         </div>
-                        <div class="skill-item" data-skill="gcp">
-                            <div class="skill-icon">
-                                <img src="svg/google-cloud-1.svg" alt="Google Cloud" />
-                            </div>
-                            <span class="skill-name">Google Cloud</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="70"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="package-link-text">Haz clic para ver en pub.dev →</div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Metodologías & Diseño</h3>
-                    <div class="skill-items">
-                        <div class="skill-item" data-skill="scrum">
-                            <div class="skill-icon">
-                                <img src="svg/scrum-1.svg" alt="Scrum" />
-                            </div>
-                            <span class="skill-name">Scrum</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="85"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="uiux">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" fill="#FF6B9D"/>
-                                    <path d="M6 7h12M6 11h8M6 15h10" stroke="#FFF" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-                            <span class="skill-name">UI/UX</span>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-level="80"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -225,144 +318,125 @@
     <!-- Experiencia Laboral -->
     <section id="experiencia" class="experience-section">
         <div class="container">
-            <h2>Experiencia Laboral</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="experience-header">
-                                <div class="company-info">
-                                    <h3 class="job-title">Tech Lead</h3>
-                                    <h4 class="company-name">GlobalApps</h4>
-                                </div>
-                                <div class="job-period">
-                                    <span class="period-badge">Mar 2025 - Actualmente</span>
-                                </div>
+            <h2 class="section-title">Experiencia Laboral</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <img src="assets/images/icon_bodytech.webp" alt="BodyTech" class="company-logo-img">
                             </div>
-                            
-                            <div class="job-description">
-                                <p>En GlobalApps lidero la estrategia tecnológica con un enfoque especializado en el desarrollo de aplicaciones móviles cross-platform.</p>
-                                
-                                <div class="responsibilities">
-                                    <h5>Responsabilidades principales:</h5>
-                                    <ul>
-                                        <li>Diseñar arquitecturas escalables y robustas para apps móviles utilizando Flutter, Kotlin y Swift, garantizando alto rendimiento y experiencia de usuario fluida</li>
-                                        <li>Liderar equipos de desarrollo full-stack, con énfasis en la calidad del producto móvil y la colaboración interdisciplinaria</li>
-                                        <li>Supervisar la implementación de soluciones backend con Node.js, Firebase y PostgreSQL, optimizadas para soportar entornos móviles en tiempo real</li>
-                                        <li>Definir y mantener pipelines de CI/CD mediante GitHub Actions y Firebase App Distribution para despliegues móviles eficientes</li>
-                                        <li>Participar activamente en la estimación y cotización de proyectos, asegurando viabilidad técnica y alineación con objetivos de negocio</li>
-                                        <li>Gestionar procesos de contratación técnica, formación de talento y revisión de código, fomentando buenas prácticas en el desarrollo mobile</li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="job-tech">
-                                    <h5>Tecnologías utilizadas:</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag flutter">Flutter</span>
-                                        <span class="tech-tag kotlin">Kotlin</span>
-                                        <span class="tech-tag swift">Swift</span>
-                                        <span class="tech-tag nodejs">Node.js</span>
-                                        <span class="tech-tag firebase">Firebase</span>
-                                        <span class="tech-tag postgresql">PostgreSQL</span>
-                                        <span class="tech-tag github">GitHub Actions</span>
-                                        <span class="tech-tag cicd">CI/CD</span>
-                                        <span class="tech-tag leadership">Tech Leadership</span>
-                                    </div>
-                                </div>
+                            <div class="company-text">
+                                <h3 class="job-title">Desarrollador Mobile</h3>
+                                <p class="company-name">BodyTech</p>
                             </div>
+                        </div>
+                        <span class="card-date">Sep 2025 - Actualmente</span>
+                    </div>
+                    <div class="job-description">
+                        <p>Desarrollo y mantenimiento de aplicaciones móviles para BodyTech, enfocado en mejorar continuamente la calidad del código y la experiencia del usuario.</p>
+                        <ul>
+                            <li>Mantenimiento y optimización de la aplicación móvil multiplataforma</li>
+                            <li>Implementación de arquitecturas escalables y claras utilizando Clean Architecture para mejorar la mantenibilidad del código</li>
+                            <li>Desarrollo de librerías personalizadas con integración nativa para funcionalidades específicas de iOS y Android</li>
+                            <li>Integración de características nativas avanzadas del sistema: Picture-in-Picture (PiP), SharePlay y otras funcionalidades propias de cada plataforma</li>
+                            <li>Mejora continua de la calidad del código mediante mejores prácticas de desarrollo y refactorización</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                            <span class="tech-tag">Native Integration</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="experience-header">
-                                <div class="company-info">
-                                    <h3 class="job-title">Desarrollador Mobile</h3>
-                                    <h4 class="company-name">Quick Help</h4>
-                                </div>
-                                <div class="job-period">
-                                    <span class="period-badge">Ene 2021 - Jun 2025</span>
-                                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <img src="assets/images/icon_globalapps.png" alt="GlobalApps" class="company-logo-img">
                             </div>
-                            
-                            <div class="job-description">
-                                <p>Desarrollo y mantenimiento de aplicaciones móviles multiplataforma utilizando Flutter, enfocándome en crear experiencias de usuario excepcionales y procesos de desarrollo eficientes.</p>
-                                
-                                <div class="responsibilities">
-                                    <h5>Responsabilidades principales:</h5>
-                                    <ul>
-                                        <li>Diseño e implementación de nuevas características con énfasis en UI/UX</li>
-                                        <li>Desarrollo de pruebas unitarias, de widget y de integración para garantizar la confiabilidad</li>
-                                        <li>Integración de flujos de trabajo CI/CD utilizando GitHub Actions para automatizar despliegues</li>
-                                        <li>Implementación automatizada en Apple App Store y Google Play Store</li>
-                                        <li>Monitoreo del rendimiento y reparación de errores para garantizar experiencias óptimas</li>
-                                        <li>Colaboración en equipos ágiles utilizando metodología Scrum</li>
-                                        <li>Proponer e implementar mejoras basadas en análisis y feedback de usuarios</li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="job-tech">
-                                    <h5>Tecnologías utilizadas:</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag flutter">Flutter</span>
-                                        <span class="tech-tag dart">Dart</span>
-                                        <span class="tech-tag swift">Swift</span>
-                                        <span class="tech-tag kotlin">Kotlin</span>
-                                        <span class="tech-tag firebase">Firebase</span>
-                                        <span class="tech-tag xcode">Xcode</span>
-                                        <span class="tech-tag github">GitHub Actions</span>
-                                        <span class="tech-tag testing">Testing</span>
-                                        <span class="tech-tag scrum">Scrum</span>
-                                        <span class="tech-tag cicd">CI/CD</span>
-                                        <span class="tech-tag uiux">UI/UX</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="achievements">
-                                    <h5>Logros destacados:</h5>
-                                    <ul>
-                                        <li>Automatización completa del proceso de despliegue en tiendas de aplicaciones</li>
-                                        <li>Implementación de testing completo (unitarias, widget e integración)</li>
-                                        <li>Mejora continua de la experiencia de usuario basada en métricas y feedback</li>
-                                        <li>Optimización del flujo de desarrollo con metodologías ágiles</li>
-                                    </ul>
-                                </div>
+                            <div class="company-text">
+                                <h3 class="job-title">Tech Lead</h3>
+                                <p class="company-name">GlobalApps</p>
                             </div>
+                        </div>
+                        <span class="card-date">Mar 2025 - Actualmente</span>
+                    </div>
+                    <div class="job-description">
+                        <p>En GlobalApps lidero la estrategia tecnológica con un enfoque especializado en el desarrollo de aplicaciones móviles cross-platform.</p>
+                        <ul>
+                            <li>Diseñar arquitecturas escalables y robustas para apps móviles utilizando Flutter, Kotlin y Swift</li>
+                            <li>Liderar equipos de desarrollo full-stack, con énfasis en la calidad del producto móvil</li>
+                            <li>Supervisar la implementación de soluciones backend con Node.js, Firebase y PostgreSQL</li>
+                            <li>Definir y mantener pipelines de CI/CD mediante GitHub Actions</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">PostgreSQL</span>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Puedes agregar más experiencias aquí -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-card">
-                            <div class="experience-header">
-                                <div class="company-info">
-                                    <h3 class="job-title">Desarrollador Flutter</h3>
-                                    <h4 class="company-name">Free Lancer</h4>
-                                </div>
-                                <div class="job-period">
-                                    <span class="period-badge">Ene 2020 - Dic 2020</span>
-                                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <img src="assets/images/icono_quick.png" alt="Quick Help" class="company-logo-img">
                             </div>
-                            
-                            <div class="job-description">
-                                <p>Inicio de mi carrera profesional en desarrollo móvil, aprendiendo las bases de Flutter y participando en proyectos de pequeña escala.</p>
-                                
-                                <div class="job-tech">
-                                    <h5>Tecnologías utilizadas:</h5>
-                                    <div class="tech-tags">
-                                        <span class="tech-tag flutter">Flutter</span>
-                                        <span class="tech-tag dart">Dart</span>
-                                        <span class="tech-tag sqlite">SQLite</span>
-                                    </div>
-                                </div>
+                            <div class="company-text">
+                                <h3 class="job-title">Desarrollador Mobile</h3>
+                                <p class="company-name">Quick Help</p>
                             </div>
+                        </div>
+                        <span class="card-date">Ene 2021 - Jun 2025</span>
+                    </div>
+                    <div class="job-description">
+                        <p>Desarrollo y mantenimiento de aplicaciones móviles multiplataforma utilizando Flutter, enfocándome en crear experiencias de usuario excepcionales.</p>
+                        <ul>
+                            <li>Diseño e implementación de nuevas características con énfasis en UI/UX</li>
+                            <li>Desarrollo de pruebas unitarias, de widget y de integración</li>
+                            <li>Integración de flujos de trabajo CI/CD utilizando GitHub Actions</li>
+                            <li>Implementación automatizada en Apple App Store y Google Play Store</li>
+                            <li>Colaboración en equipos ágiles utilizando metodología Scrum</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <img src="assets/images/medium_white_icon.png" alt="Freelancer" class="company-logo-img">
+                            </div>
+                            <div class="company-text">
+                                <h3 class="job-title">Desarrollador Flutter</h3>
+                                <p class="company-name">Free Lancer</p>
+                            </div>
+                        </div>
+                        <span class="card-date">Ene 2020 - Dic 2020</span>
+                    </div>
+                    <div class="job-description">
+                        <p>Inicio de mi carrera profesional en desarrollo móvil, aprendiendo las bases de Flutter y participando en proyectos de pequeña escala.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">SQLite</span>
                         </div>
                     </div>
                 </div>
@@ -373,9 +447,7 @@
     <!-- Proyectos -->
     <section id="proyectos" class="projects-section">
         <div class="container">
-            <h2>Proyectos Destacados</h2>
-            <p class="projects-subtitle">Una selección de mis trabajos</p>
-            
+            <h2 class="section-title">Proyectos Personales</h2>
             <div class="projects-grid">
 
     <!-- Movies Gallery App -->
@@ -383,64 +455,34 @@
                 <div class="project-card" data-project="movies">
                     <div class="project-image">
                         <img src="images/Screenshot_1716690500.png" alt="Movies Gallery App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://app-movies-gallery.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15,3 21,3 21,9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                    <span>Pagina Web</span>
-                                </a>
-                                <a href="https://github.com/Alsahim0420/movies-gallery" class="project-link github-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>
-                                    <span>GitHub</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Movies Gallery</h3>
-                            <div class="project-type">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                                </svg>
-                                <span>Mobile App</span>
-                            </div>
-                        </div>
-                        
+                        <h3 class="project-title">Movies Gallery</h3>
                         <p class="project-description">
                             Aplicación móvil multiplataforma para explorar películas populares con una interfaz moderna y intuitiva. Incluye funcionalidades de búsqueda, favoritos y detalles completos de cada película.
                         </p>
-                        
                         <div class="project-tech">
-                            <span class="tech-badge flutter">Flutter</span>
-                            <span class="tech-badge dart">Dart</span>
-                            <span class="tech-badge api">REST API</span>
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Dart</span>
+                            <span class="tech-badge">REST API</span>
                         </div>
-                        
-                        <div class="project-features">
-                            <div class="feature">
+                        <div class="project-links">
+                            <a href="https://app-movies-gallery.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                                <span>Responsive Design</span>
-                            </div>
-                            <div class="feature">
+                                <span>Ver Demo</span>
+                            </a>
+                            <a href="https://github.com/Alsahim0420/movies-gallery" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                    <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
-                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
                                 </svg>
-                                <span>API Integration</span>
-                            </div>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -451,64 +493,34 @@
                 <div class="project-card" data-project="tasks">
                     <div class="project-image">
                         <img src="https://res.cloudinary.com/panmecar/image/upload/v1752961283/ChatGPT_Image_19_jul_2025_04_41_11_p.m._shujvx.png" alt="My Tasks App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://my-tasks-landing-page.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15,3 21,3 21,9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                    <span>Pagina Web</span>
-                                </a>
-                                <a href="https://github.com/Alsahim0420/My-Tasks" class="project-link github-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>
-                                    <span>GitHub</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">My Tasks</h3>
-                            <div class="project-type">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                                </svg>
-                                <span>Mobile App</span>
-                            </div>
-                        </div>
-                        
+                        <h3 class="project-title">My Tasks</h3>
                         <p class="project-description">
                             Aplicación de gestión de tareas con funcionalidades avanzadas de organización, recordatorios y sincronización. Diseñada para mejorar la productividad personal y profesional.
                         </p>
-                        
                         <div class="project-tech">
-                            <span class="tech-badge flutter">Flutter</span>
-                            <span class="tech-badge dart">Dart</span>
-                            <span class="tech-badge sqlite">Shared Preferences</span>
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Dart</span>
+                            <span class="tech-badge">Shared Preferences</span>
                         </div>
-                        
-                        <div class="project-features">
-                            <div class="feature">
+                        <div class="project-links">
+                            <a href="https://my-tasks-landing-page.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 11l3 3 8-8"></path>
-                                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.53 0 2.96.38 4.21 1.05"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                                <span>Task Management</span>
-                            </div>
-                            <div class="feature">
+                                <span>Ver Demo</span>
+                            </a>
+                            <a href="https://github.com/Alsahim0420/My-Tasks" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
-                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
                                 </svg>
-                                <span>Reminders</span>
-                            </div>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -517,63 +529,34 @@
                 <div class="project-card" data-project="billey">
                     <div class="project-image">
                         <img src="https://res.cloudinary.com/panmecar/image/upload/v1752550787/ChatGPT_Image_14_jul_2025_10_30_44_p.m._hpoaxj.png" alt="Billey App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://billey.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15,3 21,3 21,9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                    <span>Pagina Web</span>
-                                </a>
-                                <a href="https://github.com/Alsahim0420/Billey" target="_blank" rel="noopener noreferrer" class="project-link github-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>
-                                    <span>GitHub</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Billey</h3>
-                            <div class="project-type">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                                </svg>
-                                <span>Mobile App</span>
-                            </div>
-                        </div>
-                        
+                        <h3 class="project-title">Billey</h3>
                         <p class="project-description">
-                            💼 Billey – Tu app de finanzas personales. Billey es una aplicación diseñada para ayudarte a tomar el control de tu dinero de forma simple, rápida y efectiva. Con una interfaz amigable y funciones potentes, Billey te permite registrar tus ingresos y gastos, visualizar tus hábitos financieros y alcanzar tus metas con claridad.
+                            Aplicación de finanzas personales diseñada para ayudarte a tomar el control de tu dinero de forma simple y efectiva. Permite registrar ingresos y gastos, visualizar hábitos financieros y alcanzar metas.
                         </p>
-                        
                         <div class="project-tech">
-                            <span class="tech-badge flutter">Flutter</span>
-                            <span class="tech-badge dart">Dart</span>
-                            <span class="tech-badge hive">Hive</span>
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Dart</span>
+                            <span class="tech-badge">Hive</span>
                         </div>
-                        
-                        <div class="project-features">
-                            <div class="feature">
+                        <div class="project-links">
+                            <a href="https://billey.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                                <span>Expense Tracking</span>
-                            </div>
-                            <div class="feature">
+                                <span>Ver Demo</span>
+                            </a>
+                            <a href="https://github.com/Alsahim0420/Billey" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 3v18h18"></path>
-                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
                                 </svg>
-                                <span>Budget Analytics</span>
-                            </div>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -583,68 +566,34 @@
                 <div class="project-card" data-project="devboard">
                     <div class="project-image">
                         <img src="https://res.cloudinary.com/panmecar/image/upload/v1752965412/Captura_de_pantalla_2025-07-19_a_la_s_5.49.47_p.m._d6kmfc.png" alt="DevBoard App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://devboardapp.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15,3 21,3 21,9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                    <span>Live Demo</span>
-                                </a>
-                                <a href="https://github.com/Alsahim0420/DevBoard" target="_blank" rel="noopener noreferrer" class="project-link github-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>
-                                    <span>GitHub</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">DevBoard</h3>
-                            <div class="project-type">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                                </svg>
-                                <span>Web App</span>
-                            </div>
-                        </div>
-                        
+                        <h3 class="project-title">DevBoard</h3>
                         <p class="project-description">
-                            Aplicación web de gestión de tareas tipo Trello/Jira desarrollada con Flutter Web. Permite crear tableros Kanban, organizar tareas en columnas, arrastrar y soltar elementos, y gestionar proyectos de desarrollo de forma visual e intuitiva.
+                            Aplicación web de gestión de tareas tipo Trello/Jira desarrollada con Flutter Web. Permite crear tableros Kanban, organizar tareas en columnas y gestionar proyectos de desarrollo de forma visual e intuitiva.
                         </p>
-                        
                         <div class="project-tech">
-                            <span class="tech-badge flutter">Flutter Web</span>
-                            <span class="tech-badge dart">Dart</span>
-                            <span class="tech-badge firebase">Firebase</span>
-                            <!-- <span class="tech-badge hive">Hive</span> -->
+                            <span class="tech-badge">Flutter Web</span>
+                            <span class="tech-badge">Dart</span>
+                            <span class="tech-badge">Firebase</span>
                         </div>
-                        
-                        <div class="project-features">
-                            <div class="feature">
+                        <div class="project-links">
+                            <a href="https://devboardapp.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 3v18h18"></path>
-                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                                <span>Kanban Boards</span>
-                            </div>
-                            <div class="feature">
+                                <span>Ver Demo</span>
+                            </a>
+                            <a href="https://github.com/Alsahim0420/DevBoard" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
                                 </svg>
-                                <span>Team Collaboration</span>
-                            </div>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -654,69 +603,61 @@
         </div>
     </section>
 
-    <!-- Mi Contribución Open Source -->
-    <section id="flutter-packages" class="packages-section">
+    <!-- Details Section -->
+    <section class="details-section">
         <div class="container">
-            <div class="packages-header">
-                <h2>Mi Contribución Open Source</h2>
-                <p class="packages-subtitle">Librería Flutter publicada para la comunidad de desarrolladores</p>
-            </div>
-            
-            <div class="packages-showcase">
-                <a href="https://pub.dev/packages/ai_adaptive_ui" target="_blank" rel="noopener noreferrer" class="main-package-card">
-                    <div class="package-main-content">
-                        <div class="package-header">
-                            <div class="package-icon-large">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                    <path d="M8 21l4-7 4 7"/>
-                                    <path d="M12 13V7"/>
-                                    <circle cx="12" cy="8" r="1"/>
-                                </svg>
-                                <div class="author-badge-large">
-                                    <span>🏆 Autor</span>
-                                </div>
-                            </div>
-                            <div class="package-main-info">
-                                <h3>🎨 AI Adaptive UI</h3>
-                                <p class="package-tagline">Librería Flutter moderna para interfaces adaptativas</p>
-                                <div class="package-main-stats">
-                                    <span class="stat-item pub">📦 pub.dev</span>
-                                    <span class="stat-item downloads" id="downloads-count">⬇️ <span class="loading">...</span> downloads</span>
-                                    <span class="stat-item version">v0.1.0</span>
-                                    <span class="stat-item likes" id="likes-count">👍 <span class="loading">...</span> like</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="package-description">
-                            <p>Una librería Flutter moderna que permite construir interfaces adaptativas que responden automáticamente a diferentes tamaños de pantalla, orientaciones e idiomas. Incluye widgets inteligentes como <code>AdaptiveLayout</code> y <code>AdaptiveCard</code>, con preparación para integración con IA.</p>
-                        </div>
-                        
-                        <div class="package-features">
-                            <div class="feature-item">
-                                <span class="feature-icon">🎯</span>
-                                <span>Diseño Responsivo Automático</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">🌍</span>
-                                <span>Soporte Multiidioma</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">🤖</span>
-                                <span>Sugerencias de IA</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">⚡</span>
-                                <span>Rendimiento Optimizado</span>
-                            </div>
-                        </div>
-                        
-                        <div class="visit-library">
-                            <span class="visit-text">Haz clic para ver en pub.dev →</span>
-                        </div>
+            <h2 class="section-title">Detalles</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="detail-content">
+                        <h3 class="detail-label">Edad</h3>
+                        <p class="detail-value">25 años</p>
+                    </div>
+                </div>
+                
+                <a href="mailto:panmecar@gmail.com" class="detail-card detail-card-link">
+                    <div class="detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="detail-content">
+                        <h3 class="detail-label">Email</h3>
+                        <p class="detail-value">panmecar@gmail.com</p>
                     </div>
                 </a>
+                
+                <a href="https://wa.me/573006866709" target="_blank" rel="noopener noreferrer" class="detail-card detail-card-link">
+                    <div class="detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <div class="detail-content">
+                        <h3 class="detail-label">Teléfono</h3>
+                        <p class="detail-value">+57 300-6866709</p>
+                    </div>
+                </a>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="10" r="3"></circle>
+                            <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path>
+                        </svg>
+                    </div>
+                    <div class="detail-content">
+                        <h3 class="detail-label">Ubicación</h3>
+                        <p class="detail-value">Colombia</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -727,7 +668,7 @@
             <div class="cta-content">
                 <div class="cta-text">
                     <h2>¿Necesitas un desarrollador mobile talentoso para tu equipo o proyecto?</h2>
-                    <p>Con 4+ años de experiencia en Flutter, Kotlin, Swift y metodologías ágiles, estoy listo para impulsar tu próximo gran proyecto</p>
+                    <p>Con +6 años de experiencia en Flutter, Kotlin, Swift y metodologías ágiles, estoy listo para impulsar tu próximo gran proyecto</p>
                 </div>
                 <div class="cta-buttons">
                     <a href="#contacto" class="cta-btn primary">¡Conversemos sobre las oportunidades!</a>
@@ -783,7 +724,7 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-header">
-                    <h2>¡Construyamos el Futuro Juntos!</h2>
+                    <h2 class="section-title">¡Construyamos el Futuro Juntos!</h2>
                     <p class="contact-subtitle">¿Buscas un desarrollador mobile para tu equipo o tienes un proyecto en mente? Estoy disponible para oportunidades laborales y colaboraciones profesionales</p>
                 </div>
                 
@@ -844,14 +785,16 @@
                         <div class="contact-info">
                             <h3>Oportunidades Corporativas</h3>
                             <p>Abierto a posiciones full-time y contratos</p>
-                            <span class="contact-text">4+ años de experiencia 💼</span>
+                            <span class="contact-text">+6 años de experiencia 💼</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="social-section">
-                    <h3>Sígueme en redes</h3>
-                    <div class="social-links">
+            </div>
+            
+            <div class="social-section">
+                <h3>Sígueme en redes</h3>
+                <div class="social-links">
                         <a href="https://www.linkedin.com/in/pablo-andrés-melo-carvajal-006308195/" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -865,13 +808,7 @@
                             </svg>
                             <span>GitHub</span>
                         </a>
-                        
-                      
                     </div>
-                </div>
-                
-                <div class="contact-footer">
-                    <p>¿Listo para dar el siguiente paso? <strong>¡Estoy aquí para ayudarte!</strong></p>
                 </div>
             </div>
         </div>
