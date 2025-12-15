@@ -22,16 +22,56 @@ navLinks.forEach(link => {
   });
 });
 
+// Función para actualizar el enlace activo basado en la sección visible
+function updateActiveNavLink() {
+  const sections = document.querySelectorAll('section[id], footer[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  let currentSection = '';
+  const scrollPosition = window.scrollY + 150; // Offset para activar antes
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      currentSection = sectionId;
+    }
+  });
+
+  // Si no encontramos sección, verificar si estamos en el top
+  if (scrollPosition < 200) {
+    currentSection = 'inicio';
+  }
+
+  // Actualizar clases activas
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    const href = link.getAttribute('href');
+    if (href === `#${currentSection}` || (currentSection === 'inicio' && href === '#inicio')) {
+      link.classList.add('active');
+    }
+  });
+}
+
 // Smooth scrolling para navegación
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+    const href = this.getAttribute('href');
+    if (href !== '#' && href !== '#!') {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        // Actualizar enlace activo después del scroll
+        setTimeout(() => {
+          updateActiveNavLink();
+        }, 300);
+      }
     }
   });
 });
@@ -244,8 +284,48 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
   if (window.scrollY > 50) {
-    navbar.style.background = 'rgba(17, 0, 15, 0.98)';
+    navbar.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.4)';
+    navbar.style.transform = 'translateX(-50%) scale(0.98)';
   } else {
-    navbar.style.background = 'rgba(17, 0, 15, 0.95)';
+    navbar.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
+    navbar.style.transform = 'translateX(-50%) scale(1)';
   }
+
+  // Detectar sección activa
+  updateActiveNavLink();
 });
+
+// Inicializar al cargar
+document.addEventListener('DOMContentLoaded', () => {
+  updateActiveNavLink();
+  initScrollAnimations();
+  initStaggerAnimations();
+});
+
+// Animaciones escalonadas para elementos - deshabilitado para evitar elementos invisibles
+function initStaggerAnimations() {
+  // Los elementos ya son visibles desde el inicio, no necesitan animación
+}
+
+// Animaciones al hacer scroll
+function initScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observar elementos con animación
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  animatedElements.forEach(el => observer.observe(el));
+
+  // Las secciones ya son visibles desde el inicio, no necesitan animación
+}
